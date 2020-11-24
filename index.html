@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="./src/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
@@ -14,7 +15,7 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center;padding-bottom: 20px; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
@@ -22,18 +23,25 @@
   <header class="desktop-header">
     <section class="container">
       <div class="logo-img">
-        <img src="/images/logo.svg" alt="">
+        <img src="./images/logo.svg" alt="">
+        <div class="bullet">
+          <div class="bullet1"></div>
+          <div class="bullet2"></div>
+          <div class="bullet3"></div>
+        </div>
       </div>
-      <nav class="features">
-        <ul>
-          <li><a href="#" class="feature-link">Features</a></li>
-          <li><a href="#" class="feature-link">Pricing</a></li>
-          <li><a href="#" class="feature-link">Resources</a></li>
-        </ul>
-      </nav>
-      <div class="sign">
-        <li><a href="#" class="feature-link">Login</a></li>
-        <li><a href="#" class="sign-up">Sign Up</a></li>
+      <div class="navigation">
+        <nav class="features">
+          <ul>
+            <li><a href="#" class="feature-link">Features</a></li>
+            <li><a href="#" class="feature-link">Pricing</a></li>
+            <li><a href="#" class="feature-link">Resources</a></li>
+          </ul>
+        </nav>
+        <div class="sign">
+          <li><a href="#" class="feature-link">Login</a></li>
+          <li><a href="#" class="sign-up">Sign Up</a></li>
+        </div>
       </div>
     </section>
   </header>
@@ -41,12 +49,12 @@
   <section class="illustration">
     <div class="illustration-grid">
       <div class="more">
-        <h1>More than just shorter links</h1>
-        <p class="build">Build your brand’s recognition and get detailed insights on how your links are performing.</p>
-          <button class="started">Get Started</button>
+        <h1  data-aos="fade-right">More than just shorter links</h1>
+        <p class="build"  data-aos="fade-up" data-aos-delay="100">Build your brand’s recognition and get detailed insights on how your links are performing.</p>
+          <button class="started" data-aos="fade-up" data-aos-delay="100">Get Started</button>
       </div>
-      <div class="illustration-img">
-        <img src="/images/illustration-working.svg" alt="" class="intro-img">
+      <div class="illustration-img" data-aos="fade-left" data-aos-delay="100">
+        <img src="./images/illustration-working.svg" alt="" class="intro-img">
       </div>
     </div>
   </section>
@@ -54,57 +62,41 @@
   <section class="grey">
     <section class="link-box">
       <!-- <div class="container"> -->
-        <div class="input">
+        <div class="input" data-aos="fade-up">
           <div class="input-text">
-            <input type="text" name="" id="">
+            <input type="text" name="" id="" placeholder="Shorten a link here...">
             <p>Please add a link</p>
           </div>
           <button type="submit" class="shorten"> Shorten It!</button>
         </div>
       <!-- </div> -->
         <div class="lists">
-          <!-- <div class="list">
-            <p class="long-link">wwwwwwwwwwwwwwwwww</p>
-            <p class="short-link">njflmbfnkjhbkjnlmedfsvnk</p>
-            <button class="copy-link">copied</button>
-          </div>
-
-          <div class="list">
-            <p class="long-link">wwwwwwwwwwwwwwwwww</p>
-            <p class="short-link">njflmbfnkjhbkjnlmedfsvnk</p>
-            <button>copied</button>
-          </div>
-
-          <div class="list">
-            <p class="long-link">wwwwwwwwwwwwwwwwww</p>
-            <p class="short-link">njflmbfnkjhbkjnlmedfsvnk</p>
-            <button>copied</button>
-          </div> -->
+          
         </div>
     </section>
     <section class="advanced">
-        <h1>Advanced Statistics</h1>
-        <p class="advanced-intro">Track how your links are performing across the web with our advanced statistics dashboard.</p>
+        <h1 data-aos="fade-up" data-aos-delay="100">Advanced Statistics</h1>
+        <p class="advanced-intro" data-aos="fade-up" data-aos-delay="200">Track how your links are performing across the web with our advanced statistics dashboard.</p>
         <div class="statistics">
-          <div class="stats first-stat">
+          <div class="stats first-stat" data-aos="fade-up">
             <div class="brand-img">
-              <img src="/images/icon-brand-recognition.svg" alt="">
+              <img src="./images/icon-brand-recognition.svg" alt="">
             </div>
             <h3>Brand Recognition</h3>
             <p>Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.</p>
           </div>
 
-          <div class="stats second-stat">
+          <div class="stats second-stat" data-aos="fade-up" data-aos-delay="50">
             <div class="brand-img">
-              <img src="/images/icon-detailed-records.svg" alt="">
+              <img src="./images/icon-detailed-records.svg" alt="">
             </div>
             <h3>Detailed Records</h3>
             <p>Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
           </div>
 
-          <div class="stats third-stat">
+          <div class="stats third-stat"  data-aos="fade-up" data-aos-delay="100">
             <div class="brand-img">
-              <img src="/images/icon-fully-customizable.svg" alt="">
+              <img src="./images/icon-fully-customizable.svg" alt="">
             </div>
             <h3>Fully Customizable</h3>
             <p>Improve brand awareness and content discoverability through customizable 
@@ -122,7 +114,7 @@
 
   <!-- BOOST SECTION -->
   <secion class="boost">
-    <div>
+    <div  data-aos="zoom-in">
       <h1>Boost your links today</h1>
       <button>Get Started</button>
     </div>
@@ -130,10 +122,10 @@
 
   <footer>
     <div class="container">
-      <div class="footer-logo">
-        <img src="/images/footer-logo.svg" alt="">
+      <div class="footer-logo" data-aos="fade-up" data-aos-delay="50">
+        <img src="./images/footer-logo.svg" alt="">
       </div>
-      <div class="foot1">
+      <div class="foot1" data-aos="fade-up" data-aos-delay="100">
         <ul>
           <li class="diff">Features</li>
           <li>Link Shortening</li>
@@ -142,7 +134,7 @@
         </ul>
       </div>
 
-      <div class="foot2">
+      <div class="foot2" data-aos="fade-up" data-aos-delay="150">
         <ul>
           <li class="diff">Resources</li>
           <li>Blog</li>
@@ -151,7 +143,7 @@
         </ul>
       </div>
 
-      <div class="foot3">
+      <div class="foot3" data-aos="fade-up" data-aos-delay="200">
         <ul>
           <li class="diff">Company</li>
           <li>About</li>
@@ -162,7 +154,7 @@
       </div>
 
       <div class="icons">
-        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-facebook-square" ></i>
         <i class="fab fa-twitter"></i>
         <i class="fab fa-pinterest"></i>
         <i class="fab fa-instagram"></i>
@@ -170,7 +162,7 @@
     </div>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/Tobi-davies">Tobiloba Adebayo</a>.
     </div>
   </footer>
 
@@ -178,8 +170,13 @@
   
   
   
-  
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800
+    });
+  </script>
 
-  <script src="url.js"></script>
+  <script src="./src/url.js"></script>
 </body>
 </html>
